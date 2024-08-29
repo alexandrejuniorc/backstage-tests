@@ -1,18 +1,18 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage-devopsdays-sp
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: backstage-tests
+  description: |
+    This is a test component for Backstage
   annotations:
     backstage.io/adr-location: ./docs/adrs
-    backstage.io/source-location: url:https://github.com/gabriel-dantas98/backstage-devopsdays-sp/blob/main/
-    backstage.io/managed-by-origin-location: url:https://github.com/gabriel-dantas98/backstage-devopsdays-sp/blob/main/catalog-info.yaml
-    backstage.io/managed-by-location: url:https://github.com/gabriel-dantas98/backstage-devopsdays-sp/blob/main/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/alexandrejuniorc/backstage-tests/tree/main/
+    backstage.io/managed-by-origin-location: url:https://github.com/alexandrejuniorc/backstage-tests/tree/main/catalog-info.yaml
+    backstage.io/managed-by-location: url:https://github.com/alexandrejuniorc/backstage-tests/tree/main/catalog-info.yaml
+    # Example for optional annotations
+    #   github.com/project-slug: backstage/backstage
+    #   backstage.io/techdocs-ref: dir:.
 spec:
   type: website
-  owner: team-a
+  owner: development
   lifecycle: experimental
