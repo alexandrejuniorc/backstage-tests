@@ -17,6 +17,7 @@ import {
   TechDocsIndexPage,
   techdocsPlugin,
   TechDocsReaderPage,
+  DefaultTechDocsHome,
 } from '@backstage/plugin-techdocs';
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
@@ -28,6 +29,7 @@ import { Root } from './components/Root';
 
 import {
   AlertDisplay,
+  AutoLogout,
   OAuthRequestDialog,
   SignInPage,
 } from '@backstage/core-components';
@@ -71,7 +73,9 @@ const routes = (
     >
       {entityPage}
     </Route>
-    <Route path="/docs" element={<TechDocsIndexPage />} />
+    <Route path="/docs" element={<TechDocsIndexPage />}>
+      <DefaultTechDocsHome />
+    </Route>
     <Route
       path="/docs/:namespace/:kind/:name/*"
       element={<TechDocsReaderPage />}
@@ -102,6 +106,11 @@ export default app.createRoot(
   <>
     <AlertDisplay />
     <OAuthRequestDialog />
+    <AutoLogout
+      idleTimeoutMinutes={30}
+      useWorkerTimers={false}
+      logoutIfDisconnected={false}
+    />
     <AppRouter>
       <Root>{routes}</Root>
     </AppRouter>
