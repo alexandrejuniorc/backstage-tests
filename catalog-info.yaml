@@ -1,31 +1,15 @@
-# apiVersion: backstage.io/v1alpha1
-# kind: Component
-# metadata:
-#   name: backstage-tests
-#   description: |
-#     This is a test component for Backstage
-#   annotations:
-#     backstage.io/adr-location: https://github.com/alexandrejuniorc/backstage-tests/blob/main/docs/architecture-decisions
-#     # Example for optional annotations
-#     github.com/project-slug: backstage/backstage
-#     backstage.io/techdocs-ref: dir:.
-# spec:
-#   type: website
-#   owner: group:development
-#   lifecycle: experimental
-
-# Example:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: petstore
-  namespace: external-systems
-  description: Petstore
+  name: backstage-tests
+  description: |
+    This is a test component for Backstage
+  annotations:
+    backstage.io/adr-location: https://github.com/alexandrejuniorc/backstage-tests/blob/main/docs/architecture-decisions
+    # Example for optional annotations
+    # github.com/project-slug: backstage/backstage
+    # backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
+  type: website
+  owner: lab2dev
   lifecycle: experimental
-  owner: group:pet-managers
-  providesApis:
-    - petstore
-    - internal/streetlights
-    - hello-world
