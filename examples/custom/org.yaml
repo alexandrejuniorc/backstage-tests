@@ -1,0 +1,53 @@
+---
+# Usuário guest associado ao grupo developers
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+  annotations:
+    backstage.io/email: guest@example.com
+spec:
+  memberOf: [developers]
+---
+# Usuário alexandrejuniorc associado ao grupo lab2dev
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alexandrejuniorc
+  annotations:
+    backstage.io/email: alejunior.dev@gmail.com
+spec:
+  memberOf: [lab2dev]
+---
+# Grupo external com lab2dev como filho
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: external
+  description: The external group
+spec:
+  type: team
+  profile:
+    displayName: External
+    email: external@example.com
+    picture: https://example.com/groups/external.jpeg
+  # Defina que este grupo é pai do grupo lab2dev
+  children: [lab2dev]
+  members: []
+---
+# Grupo lab2dev com guest como membro e external como pai
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: lab2dev
+  description: The lab2dev group
+spec:
+  type: team
+  profile:
+    displayName: Lab2Dev
+    email: lab2dev@example.com
+    picture: https://example.com/groups/lab2dev.jpeg
+  # Defina que este grupo é filho do grupo external
+  parent: external
+  children: []
+  members: [guest, alexandrejuniorc]
