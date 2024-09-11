@@ -2905,7 +2905,7 @@
     "@backstage/types" "^1.1.1"
     google-auth-library "^9.0.0"
 
-"@backstage/plugin-auth-backend-module-github-provider@^0.1.20", "@backstage/plugin-auth-backend-module-github-provider@^0.1.21":
+"@backstage/plugin-auth-backend-module-github-provider@^0.1.21":
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/@backstage/plugin-auth-backend-module-github-provider/-/plugin-auth-backend-module-github-provider-0.1.21.tgz#b4a70cfb1f6fafacaf5eb43c98b55da2b4e16808"
   integrity sha512-qBhswVCnisj+uClNYlTIWcD27ojDj7XS98oKAbaqA6loBGXCJbHzQzzKeb2kJazPDcBCJi7C1WugNItEGwrYZg==
