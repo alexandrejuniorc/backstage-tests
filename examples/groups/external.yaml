@@ -1,0 +1,15 @@
+# Grupo external com lab2dev como filho
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: external
+  description: The external group
+spec:
+  type: team
+  profile:
+    displayName: External
+    email: external@example.com
+    picture: https://example.com/groups/external.jpeg
+  # Defina que este grupo é pai do grupo lab2dev
+  children: [lab2dev]
+  members: []
