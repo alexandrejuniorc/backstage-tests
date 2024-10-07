@@ -20,7 +20,7 @@ export const GithubProvider = createBackendModule({
             async signInResolver(info, ctx) {
               const { fullProfile } = info.result;
 
-              const userRef = `user:${fullProfile.username}`;
+              const userRef = `user:default/${fullProfile.username}`;
               return ctx.issueToken({
                 claims: {
                   sub: userRef,

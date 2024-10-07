@@ -1,0 +1,16 @@
+# Grupo lab2dev com guest como membro e external como pai
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: managers
+  description: The managers group
+spec:
+  type: team
+  profile:
+    displayName: Managers
+    email: managers@example.com
+    picture: https://example.com/groups/managers.jpeg
+  # Defina que este grupo é filho do grupo external
+  parent: external
+  children: []
+  members: [guest, alexandrejuniorc]

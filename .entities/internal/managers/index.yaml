@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: managers-org-data
+spec:
+  type: url
+  targets:
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/lab2dev/group.yaml
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/lab2dev/users.yaml

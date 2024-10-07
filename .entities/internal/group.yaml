@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: internal
+  description: The internal group
+spec:
+  type: team
+  profile:
+    displayName: Internal
+    email: internal@example.com
+    picture: https://example.com/groups/internal.jpeg
+  # Defina que este grupo é pai do grupo lab2dev
+  children: []
+  members: []
