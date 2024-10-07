@@ -6,3 +6,4 @@ spec:
   type: url
   targets:
     - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/index.yaml
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/internal/index.yaml
