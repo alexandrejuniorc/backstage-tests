@@ -5,5 +5,5 @@ metadata:
 spec:
   type: url
   targets:
-    - http://github.com/myorg/myproject/org-data-dump/catalog-info-staff.yaml
-    - http://github.com/myorg/myproject/org-data-dump/catalog-info-consultants.yaml
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/lab2dev/group.yaml
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/lab2dev/users.yaml

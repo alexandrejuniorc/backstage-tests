@@ -1,9 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: external-org-data
+  name: entities
 spec:
   type: url
   targets:
-    - http://github.com/myorg/myproject/org-data-dump/catalog-info-staff.yaml
-    - http://github.com/myorg/myproject/org-data-dump/catalog-info-consultants.yaml
+    - https://github.com/alexandrejuniorc/backstage-tests/blob/main/.entities/external/index.yaml
